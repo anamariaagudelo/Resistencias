@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Resistencias</string>
+    <string name="negro">0-NEGRO</string>
+    <string name="marron">1-MARRON</string>
+    <string name="rojo">2- ROJO</string>
+    <string name="naranja">3- NARANJA</string>
+    <string name="amarillo">4-AMARILLO</string>
+    <string name="verde">5-VERDE</string>
+    <string name="azul">6-AZUL</string>
+    <string name="purpura">7- PURPURA</string>
+    <string name="gris">8- GRIS</string>
+    <string name="blanco">9- BLANCO</string>
+    <string name="masMarron">±1%MARRON</string>
+    <string name="masRojo">±2%ROJO</string>
+    <string name="masDorado">±5%DORADO</string>
+    <string name="masPlateado">±10%PLATA</string>
+    <string name="CalcularResistencia">Calcular</string>
+    <string name="codigos_colores">Código de Colores</string>
+    <string name="Calculos">Cálculos</string>
+    <string name="limpiar">Limpiar</string>
+
+</resources>

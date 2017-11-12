@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--@Ana Marìa Agudelo Cadavid
+ Jakeline Garcia Mesa
+ Ingenieria de Sistemas
+ 2017-II!-->
+
+
+<!--Se uso contenerdor LinearLayout para realizaciòn de la interfaz grafica,
+    con configuraciones inciales de alto y ancho de la pantalla !-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.edu.udea.resistencias.MainActivity">
+
+
+
+
+    <!--Cntenedor de la pantalla completa!-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whitesmoke"
+        android:orientation="horizontal">
+
+        <!--Divisiòn de la pantalla en dos partes iguales de forma vertical!-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1">
+
+
+                <!--Tìtulo de la parte 1 de la aplicaciòn en
+                donde estan contenidos tosos los colores y sus respectivos nombres!-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6sp"
+                    android:text="@string/codigos_colores"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:orientation="vertical">
+
+
+                    <!--Configuraciòn de apariencia de cada uno de los botones de colores de la interfaz!-->
+                    <Button
+                        android:id="@+id/Bnegro"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="3sp"
+                        android:layout_weight="1"
+                        android:background="@color/black"
+                        android:onClick="Negro" />
+
+                    <Button
+                        android:id="@+id/Bmarron"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="3sp"
+                        android:layout_weight="1"
+                        android:background="@color/brown"
+                        android:onClick="Marron" />
+
+                    <Button
+                        android:id="@+id/Brojo"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="3sp"
+                        android:layout_weight="1"
+                        android:background="@color/red"
+                        android:onClick="Rojo" />
+
+                    <Button
+                        android:id="@+id/Bnaranja"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="3sp"
+                        android:layout_weight="1"
+                        android:background="@color/orange"
+                        android:onClick="Naranja" />
+
+                    <Button
+                        android:id="@+id/Bamarillo"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="3sp"
+                        android:layout_weight="1"
+                        android:background="@color/yellow"
+                        android:onClick="Amarillo" />
+
+                    <Button
+                        android:id="@+id/Bverde"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="3sp"
+                        android:layout_weight="1"
+                        android:background="@color/greenyellow"
+                        android:onClick="Verde" />
+
+                    <Button
+                        android:id="@+id/Bazul"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="3sp"
+                        android:layout_weight="1"
+                        android:background="@color/blue"
+                        android:onClick="Azul" />
+
+                    <Button
+                        android:id="@+id/Bpurpura"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="3sp"
+                        android:layout_weight="1"
+                        android:background="@color/darkmagenta"
+                        android:onClick="Purpura" />
+
+                    <Button
+                        android:id="@+id/Bgris"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="3sp"
+                        android:layout_weight="1"
+                        android:background="@color/gainsboro"
+                        android:onClick="Gris" />
+
+                    <Button
+                        android:id="@+id/Bblanco"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="3sp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:onClick="Blanco" />
+
+                    <Button
+                        android:id="@+id/BmasMarron"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="3sp"
+                        android:layout_weight="1"
+                        android:background="@color/brown"
+                        android:onClick="MasMarron" />
+
+                    <Button
+                        android:id="@+id/BmasRojo"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="3sp"
+                        android:layout_weight="1"
+                        android:background="@color/red"
+                        android:onClick="MasRojo" />
+
+                    <Button
+                        android:id="@+id/BmasDorado"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="3sp"
+                        android:layout_weight="1"
+                        android:background="@color/goldenrod"
+                        android:onClick="MasDorado" />
+
+                    <Button
+                        android:id="@+id/BmasPlateado"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="3sp"
+                        android:layout_weight="1"
+                        android:background="@color/lightgray"
+                        android:onClick="MasPlateado" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="3sp"
+                        android:layout_weight="1"
+                        android:text="@string/negro"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="3sp"
+                        android:layout_weight="1"
+                        android:text="@string/marron"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="3sp"
+                        android:layout_weight="1"
+                        android:text="@string/rojo"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="3sp"
+                        android:layout_weight="1"
+                        android:text="@string/naranja"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="3sp"
+                        android:layout_weight="1"
+                        android:text="@string/amarillo"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="3sp"
+                        android:layout_weight="1"
+                        android:text="@string/verde"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="3sp"
+                        android:layout_weight="1"
+                        android:text="@string/azul"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="3sp"
+                        android:layout_weight="1"
+                        android:text="@string/purpura"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="3sp"
+                        android:layout_weight="1"
+                        android:text="@string/gris"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="3sp"
+                        android:layout_weight="1"
+                        android:text="@string/blanco"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="3sp"
+                        android:layout_weight="1"
+                        android:text="@string/masMarron"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="3sp"
+                        android:layout_weight="1"
+                        android:text="@string/masRojo"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="2sp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/masDorado"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="3sp"
+                        android:layout_weight="1"
+                        android:text="@string/masPlateado"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp">
+
+
+                <!--Tìtulo de la parte 2 de la aplicaciòn en
+                donde esta una imagen explicativa y los botones de las posibes acciones a realizar
+               !-->
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6sp"
+                    android:gravity="center"
+                    android:text="@string/Calculos"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4"
+                android:background="@mipmap/resistencia">
+
+
+                <LinearLayout
+                    android:layout_width="56dp"
+                    android:layout_height="79dp"
+                    android:layout_weight="0.08">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.0">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.0"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.8">
+
+                            <TextView
+                                android:id="@+id/Tprimero"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.0">
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.6"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.8">
+
+                            <TextView
+                                android:id="@+id/Tsegundo"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.0">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.79"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.8">
+
+                            <TextView
+                                android:id="@+id/Ttercero"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.0">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.8"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.8">
+
+                            <TextView
+                                android:id="@+id/Tcuarto"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.0">
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.96">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.49">
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+            <!--Boton calcular Resistencia, al presionarlo habilita los botones de
+                colores para realizar los calculos de resistencias!-->
+                    <Button
+                        android:id="@+id/Resistencia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3sp"
+                        android:layout_marginBottom="10sp"
+                        android:background="@color/colorPrimaryDark"
+                        android:clickable="true"
+                        android:onClick="Resistencia"
+                        android:text="Calcular Resistencia"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <!--Boton calcular Inductores, al presionarlo habilita los botones de
+                colores para realizar los calculos de Inductancia!-->
+                <Button
+                    android:id="@+id/Inductor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3sp"
+                    android:layout_marginBottom="10sp"
+                    android:background="@color/colorPrimaryDark"
+                    android:onClick="Inductor"
+                    android:text="Calcular Inductor"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--Boton calcular Limpiar, al presionarlo Limpia la pantalla e inhabilita
+                los botones de colores!-->
+                <Button
+                    android:id="@+id/Blimpiar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3sp"
+                    android:layout_marginBottom="10sp"
+                    android:background="@color/colorPrimaryDark"
+                    android:onClick="Limpiar"
+                    android:text="@string/limpiar"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <!--Espacio en blanco en el cual se pueden vizualizar los resultados una vez se
+                seleccionen los colores y la aplicaciòn realice los calculos programados-->
+                <TextView
+                    android:id="@+id/Tresultado"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
